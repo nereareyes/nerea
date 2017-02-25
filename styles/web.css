@@ -21,11 +21,13 @@ h1 {
     display: flex;
     margin: 0;
     justify-content: center;
+   
     align-items: center;
+    justify-content: space-between;
 
 }
 
-ul.nav-bar li{
+.nav-bar li{
 	margin: 0;
     display: inline-block;
     padding: 5px 10px;
@@ -126,3 +128,50 @@ ul.nav-bar li{
 .footer-low ul {
 	padding: 0;
 }
+
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) {
+  .nav{
+  	padding:0 30px;
+	color:red;
+	font-family: sans-serif;
+  }
+}
+
+@media only screen 
+  and (max-width: 768px) {
+	.nav-bar li {
+		display: none;
+	}
+	#menu, li.logo {
+	display:block;
+
+	}
+
+  }
+
+
+@media only screen 
+  and (max-width: 450px)  {
+	.nav-bar{
+		padding:10px;
+		
+		
+		font-size: large;
+		align-items: flex-start;
+	}
+
+
+  }
+
+  #menu{
+  	align-self: center;
+  	position: relative;
+  }
+
+  #menu:hover {
+    right: -110px;
+  }
+
